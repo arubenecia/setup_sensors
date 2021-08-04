@@ -301,7 +301,6 @@
       </ray>
       <plugin name="scan" filename="libgazebo_ros_ray_sensor.so">
         <ros>
-          <namespace>/demo</namespace>
           <remapping>~/out:=scan</remapping>
         </ros>
         <output_type>sensor_msgs/LaserScan</output_type>
@@ -363,9 +362,6 @@
         </clip>
       </camera>
       <plugin name="depth_camera_controller" filename="libgazebo_ros_camera.so">
-        <ros>
-          <namespace>/demo</namespace>
-        </ros>
         <baseline>0.2</baseline>
         <alwaysOn>true</alwaysOn>
         <updateRate>0.0</updateRate>
